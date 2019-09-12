@@ -1,5 +1,5 @@
 //
-//  MovieModel.swift
+//  TvShowCollectionViewCell.swift
 //  Movie
 //
 //  Created by Idris on 12/09/19.
@@ -7,6 +7,7 @@
 //
 
 import UIKit
-struct MovieModel {
-    var movieImage:UIImage
+
+class TvShowCollectionViewCell: UICollectionViewCell {
+    
 }
