@@ -5,6 +5,7 @@ M-V-C
 ```
 1. make sure you have installed cocoapod
 2. pod update to update library
+3. run to simulator
 ```
 
 ### Library used
