@@ -9,5 +9,5 @@
 import UIKit
 
 class TvShowCollectionViewCell: UICollectionViewCell {
-    
+    @IBOutlet weak var tvShowsImage: UIImageView!
 }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09267698232B76B30085A3C4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09267697232B76B30085A3C4 /* DetailViewController.swift */; };
+		0926769A232B77950085A3C4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09267699232B77950085A3C4 /* API.swift */; };
+		092676A0232BC9610085A3C4 /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0926769F232BC9610085A3C4 /* DetailModel.swift */; };
 		09803A6F232AAA7B009DE4A8 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09803A6E232AAA7B009DE4A8 /* MovieCollectionViewCell.swift */; };
 		09803A71232AAA8A009DE4A8 /* TvShowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09803A70232AAA8A009DE4A8 /* TvShowCollectionViewCell.swift */; };
 		09A7B6FB232A954700010502 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A7B6FA232A954700010502 /* AppDelegate.swift */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09267697232B76B30085A3C4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		09267699232B77950085A3C4 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		0926769F232BC9610085A3C4 /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
 		09803A6E232AAA7B009DE4A8 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		09803A70232AAA8A009DE4A8 /* TvShowCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowCollectionViewCell.swift; sourceTree = "<group>"; };
 		09A7B6F7232A954700010502 /* Movie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movie.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +109,7 @@
 				09A7B710232A9A9700010502 /* TvShowsViewController.swift */,
 				09803A6E232AAA7B009DE4A8 /* MovieCollectionViewCell.swift */,
 				09803A70232AAA8A009DE4A8 /* TvShowCollectionViewCell.swift */,
+				09267697232B76B30085A3C4 /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -111,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				09A7B715232A9AE800010502 /* MovieModel.swift */,
+				09267699232B77950085A3C4 /* API.swift */,
+				0926769F232BC9610085A3C4 /* DetailModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -143,7 +152,7 @@
 				09A7B6F3232A954700010502 /* Sources */,
 				09A7B6F4232A954700010502 /* Frameworks */,
 				09A7B6F5232A954700010502 /* Resources */,
-				890CBB99FD4C63C7EA595EC8 /* [CP] Embed Pods Frameworks */,
+				0FAA68DD661951565AC03D69 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,7 +210,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		890CBB99FD4C63C7EA595EC8 /* [CP] Embed Pods Frameworks */ = {
+		0FAA68DD661951565AC03D69 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -212,7 +221,6 @@
 				"${PODS_ROOT}/Target Support Files/Pods-Movie/Pods-Movie-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -220,7 +228,6 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -259,9 +266,12 @@
 				09A7B716232A9AE800010502 /* MovieModel.swift in Sources */,
 				09803A71232AAA8A009DE4A8 /* TvShowCollectionViewCell.swift in Sources */,
 				09A7B6FB232A954700010502 /* AppDelegate.swift in Sources */,
+				092676A0232BC9610085A3C4 /* DetailModel.swift in Sources */,
 				09803A6F232AAA7B009DE4A8 /* MovieCollectionViewCell.swift in Sources */,
 				09A7B711232A9A9700010502 /* TvShowsViewController.swift in Sources */,
 				09A7B70F232A9A8500010502 /* MoviesViewController.swift in Sources */,
+				0926769A232B77950085A3C4 /* API.swift in Sources */,
+				09267698232B76B30085A3C4 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

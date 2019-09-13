@@ -8,5 +8,6 @@
 
 import UIKit
 struct MovieModel {
-    var movieImage:UIImage
+    let movieImage:UIImage
+    let movieID:String
 }

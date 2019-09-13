@@ -9,5 +9,9 @@
 import UIKit
 
 class MovieCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var movieImage: UIImageView!
     
+//    override func awakeFromNib() {
+//        self.movieImage.layer.cornerRadius = 30
+//    }
 }
