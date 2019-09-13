@@ -71,6 +71,7 @@
                                 <segment title="Airy Today"/>
                                 <segment title="Popular"/>
                             </segments>
+                            <color key="tintColor" red="0.18039215689999999" green="0.15686274510000001" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="tvShowSegmented:" destination="TPM-w2-IUj" eventType="valueChanged" id="FsQ-Ur-pk2"/>
                             </connections>
@@ -146,6 +147,7 @@
                                 <segment title="Now Playing"/>
                                 <segment title="Popular"/>
                             </segments>
+                            <color key="tintColor" red="0.18039215689999999" green="0.15686274510000001" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="movieSegmented:" destination="lbn-ck-Alg" eventType="valueChanged" id="qfu-Jx-nS9"/>
                             </connections>
@@ -251,6 +253,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.92549019607843142" green="0.67843137254901964" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.92549019610000005" green="0.67843137249999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="k0t-oW-Zkz" kind="relationship" relationship="viewControllers" id="uLa-Q6-yoW"/>
@@ -270,6 +274,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="La5-1o-rfs">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.18039215689999999" green="0.15686274510000001" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -289,6 +294,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kUB-wy-krc">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.1803921568627451" green="0.15686274509803921" blue="0.50588235294117645" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
