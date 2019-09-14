@@ -26,7 +26,6 @@ class DetailViewController: UIViewController {
             blurView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
             blurView.backgroundColor = UIColor(white: 1, alpha: 1)
             view.addSubview(blurView)
-            
             getDataById(movieID: anyMovieId,category: anyCategory)
             
         }

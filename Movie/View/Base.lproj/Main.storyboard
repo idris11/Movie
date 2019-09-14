@@ -35,16 +35,38 @@
                                             <rect key="frame" x="0.0" y="0.0" width="295" height="400"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3gO-eO-7fn">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="48l-Hf-P7k">
                                                     <rect key="frame" x="0.0" y="0.0" width="295" height="400"/>
-                                                </imageView>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3gO-eO-7fn">
+                                                            <rect key="frame" x="0.0" y="0.0" width="295" height="400"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="15"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="3gO-eO-7fn" secondAttribute="trailing" id="Qi4-cr-vrc"/>
+                                                        <constraint firstItem="3gO-eO-7fn" firstAttribute="leading" secondItem="48l-Hf-P7k" secondAttribute="leading" id="Vsf-QO-gFP"/>
+                                                        <constraint firstAttribute="bottom" secondItem="3gO-eO-7fn" secondAttribute="bottom" id="dX7-wR-V5B"/>
+                                                        <constraint firstItem="3gO-eO-7fn" firstAttribute="top" secondItem="48l-Hf-P7k" secondAttribute="top" id="mxw-4d-LK0"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="3gO-eO-7fn" firstAttribute="top" secondItem="f0j-0i-3UB" secondAttribute="top" id="2zu-fC-GrC"/>
-                                            <constraint firstAttribute="trailing" secondItem="3gO-eO-7fn" secondAttribute="trailing" id="6wO-0Z-2EE"/>
-                                            <constraint firstItem="3gO-eO-7fn" firstAttribute="leading" secondItem="f0j-0i-3UB" secondAttribute="leading" id="JUo-L0-7v7"/>
-                                            <constraint firstAttribute="bottom" secondItem="3gO-eO-7fn" secondAttribute="bottom" id="oq8-kP-IJp"/>
+                                            <constraint firstAttribute="trailing" secondItem="48l-Hf-P7k" secondAttribute="trailing" id="4Hf-uk-ElF"/>
+                                            <constraint firstItem="48l-Hf-P7k" firstAttribute="top" secondItem="f0j-0i-3UB" secondAttribute="top" id="cD7-KY-R9a"/>
+                                            <constraint firstItem="48l-Hf-P7k" firstAttribute="leading" secondItem="f0j-0i-3UB" secondAttribute="leading" id="d0o-Bq-QBJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="48l-Hf-P7k" secondAttribute="bottom" id="jKQ-pb-rYO"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="tvShowsImage" destination="3gO-eO-7fn" id="ViI-p5-RSM"/>
@@ -111,16 +133,38 @@
                                             <rect key="frame" x="0.0" y="0.0" width="295" height="400"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kK4-yp-MZd">
+                                                <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="thv-5g-sQF">
                                                     <rect key="frame" x="0.0" y="0.0" width="295" height="400"/>
-                                                </imageView>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kK4-yp-MZd">
+                                                            <rect key="frame" x="0.0" y="0.0" width="295" height="400"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="15"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="kK4-yp-MZd" firstAttribute="top" secondItem="thv-5g-sQF" secondAttribute="top" id="EUS-Lb-td0"/>
+                                                        <constraint firstAttribute="bottom" secondItem="kK4-yp-MZd" secondAttribute="bottom" id="MTJ-Rs-sW2"/>
+                                                        <constraint firstAttribute="trailing" secondItem="kK4-yp-MZd" secondAttribute="trailing" id="gYg-db-lXt"/>
+                                                        <constraint firstItem="kK4-yp-MZd" firstAttribute="leading" secondItem="thv-5g-sQF" secondAttribute="leading" id="sQQ-Ix-fiK"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="kK4-yp-MZd" firstAttribute="leading" secondItem="sTG-A9-sRS" secondAttribute="leading" id="4TT-2m-QX0"/>
-                                            <constraint firstItem="kK4-yp-MZd" firstAttribute="top" secondItem="sTG-A9-sRS" secondAttribute="top" id="BNC-nh-B2H"/>
-                                            <constraint firstAttribute="trailing" secondItem="kK4-yp-MZd" secondAttribute="trailing" id="JTM-74-mwf"/>
-                                            <constraint firstAttribute="bottom" secondItem="kK4-yp-MZd" secondAttribute="bottom" id="QlD-KN-Dsg"/>
+                                            <constraint firstItem="thv-5g-sQF" firstAttribute="top" secondItem="sTG-A9-sRS" secondAttribute="top" id="Q27-RD-S0J"/>
+                                            <constraint firstAttribute="bottom" secondItem="thv-5g-sQF" secondAttribute="bottom" id="Rq1-CC-0nT"/>
+                                            <constraint firstAttribute="trailing" secondItem="thv-5g-sQF" secondAttribute="trailing" id="bkz-v4-2gI"/>
+                                            <constraint firstItem="thv-5g-sQF" firstAttribute="leading" secondItem="sTG-A9-sRS" secondAttribute="leading" id="os9-iN-wfF"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="movieImage" destination="kK4-yp-MZd" id="ai8-0Q-VQT"/>
@@ -311,6 +355,6 @@
         <image name="tv_show" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wug-OJ-vTj"/>
+        <segue reference="OxU-Sp-ec0"/>
     </inferredMetricsTieBreakers>
 </document>
