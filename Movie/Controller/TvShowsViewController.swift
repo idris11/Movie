@@ -56,13 +56,15 @@ class TvShowsViewController: UIViewController {
             if response.result.isSuccess{
                 let jsonDictionary = response.result.value as! [String:Any]
                 let listMovie = jsonDictionary["results"] as! [[String:Any]]
+//                print(listMovie)
                 if listMovie.count > 0{
                     self.listDataTvShows = []
                     for item in listMovie{
                         let stringImage = item["poster_path"] as! String
                         let movieID = item["id"] as! NSNumber
+                        let movieTitle = item["name"] as! String
                         if let dataImage = try? Data(contentsOf:NSURL(string: "http://image.tmdb.org/t/p/w500"+stringImage)! as URL){
-                            self.listDataTvShows.append(MovieModel(movieImage: UIImage(data: dataImage)!,movieID: movieID.stringValue))
+                            self.listDataTvShows.append(MovieModel(movieImage: UIImage(data: dataImage)!,movieID: movieID.stringValue, movieTitle: movieTitle))
                         }
                     }
                     DispatchQueue.main.async {
@@ -97,6 +99,7 @@ extension TvShowsViewController:UICollectionViewDelegate,UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = tvShowCollectionView.dequeueReusableCell(withReuseIdentifier: "TvShowCell", for: indexPath) as! TvShowCollectionViewCell
         cell.tvShowsImage.image = listDataTvShows[indexPath.row].movieImage
+        cell.originalTitle.text = listDataTvShows[indexPath.row].movieTitle
         cell.layer.shadowColor = UIColor.black.cgColor
         cell.layer.shadowOffset = CGSize(width: 0, height: 3.0)
         cell.layer.shadowRadius = 8.0
