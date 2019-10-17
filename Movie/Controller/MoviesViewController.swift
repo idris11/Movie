@@ -12,6 +12,7 @@ import SVProgressHUD
 
 class MoviesViewController: UIViewController {
     @IBOutlet weak var movieCollectionView: UICollectionView!
+    
     let api = API()
     var selectedSegmentIndex = 0
     var listDataMovies:[MovieModel] = []
@@ -60,9 +61,10 @@ class MoviesViewController: UIViewController {
                     self.listDataMovies = []
                     for item in listMovie{
                         let stringImage = item["poster_path"] as! String
+                        let movieTitle = item["original_title"] as! String
                         let movieID = item["id"] as! NSNumber
                         if let dataImage = try? Data(contentsOf:NSURL(string: "http://image.tmdb.org/t/p/w500"+stringImage)! as URL){
-                            self.listDataMovies.append(MovieModel(movieImage: UIImage(data: dataImage)!,movieID: movieID.stringValue))
+                            self.listDataMovies.append(MovieModel(movieImage: UIImage(data: dataImage)!,movieID: movieID.stringValue, movieTitle: movieTitle ))
                         }
                     }
                     DispatchQueue.main.async {
@@ -95,6 +97,7 @@ extension MoviesViewController:UICollectionViewDelegate,UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = movieCollectionView.dequeueReusableCell(withReuseIdentifier: "MovieCell", for: indexPath) as! MovieCollectionViewCell
         cell.movieImage.image = listDataMovies[indexPath.row].movieImage
+        cell.originalTitle.text = listDataMovies[indexPath.row].movieTitle
         cell.layer.shadowColor = UIColor.black.cgColor
         cell.layer.shadowOffset = CGSize(width: 0, height: 3.0)
         cell.layer.shadowRadius = 8.0

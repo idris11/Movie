@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gYI-br-HnK">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gYI-br-HnK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -46,13 +44,35 @@
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </imageView>
+                                                        <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MDC-Pu-eoB">
+                                                            <rect key="frame" x="0.0" y="272" width="295" height="128"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="128" id="LFN-HJ-Tc9"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tonight Show" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdC-jh-He9">
+                                                            <rect key="frame" x="20" y="290" width="255" height="90"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="90" id="gYw-VI-nXT"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="FdC-jh-He9" secondAttribute="bottom" constant="20" id="1N7-sY-6JJ"/>
+                                                        <constraint firstItem="MDC-Pu-eoB" firstAttribute="leading" secondItem="48l-Hf-P7k" secondAttribute="leading" id="9KW-yL-pYs"/>
+                                                        <constraint firstItem="FdC-jh-He9" firstAttribute="leading" secondItem="48l-Hf-P7k" secondAttribute="leading" constant="20" id="Mes-MY-mHJ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="MDC-Pu-eoB" secondAttribute="trailing" id="Nxr-DX-565"/>
                                                         <constraint firstAttribute="trailing" secondItem="3gO-eO-7fn" secondAttribute="trailing" id="Qi4-cr-vrc"/>
                                                         <constraint firstItem="3gO-eO-7fn" firstAttribute="leading" secondItem="48l-Hf-P7k" secondAttribute="leading" id="Vsf-QO-gFP"/>
                                                         <constraint firstAttribute="bottom" secondItem="3gO-eO-7fn" secondAttribute="bottom" id="dX7-wR-V5B"/>
                                                         <constraint firstItem="3gO-eO-7fn" firstAttribute="top" secondItem="48l-Hf-P7k" secondAttribute="top" id="mxw-4d-LK0"/>
+                                                        <constraint firstAttribute="trailing" secondItem="FdC-jh-He9" secondAttribute="trailing" constant="20" id="nlA-1B-Jr7"/>
+                                                        <constraint firstAttribute="bottom" secondItem="MDC-Pu-eoB" secondAttribute="bottom" id="x3G-6i-IdB"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -69,6 +89,8 @@
                                             <constraint firstAttribute="bottom" secondItem="48l-Hf-P7k" secondAttribute="bottom" id="jKQ-pb-rYO"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="originalTitle" destination="FdC-jh-He9" id="aZl-1t-ZzC"/>
+                                            <outlet property="overview" destination="MDC-Pu-eoB" id="O9F-Wf-1L7"/>
                                             <outlet property="tvShowsImage" destination="3gO-eO-7fn" id="ViI-p5-RSM"/>
                                         </connections>
                                     </collectionViewCell>
@@ -86,8 +108,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="pbj-Yl-pXl">
                         <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="eeE-4r-GXE">
-                            <rect key="frame" x="128.5" y="7" width="157" height="30"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="eeE-4r-GXE">
+                            <rect key="frame" x="122.5" y="6" width="169" height="32"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
                                 <segment title="Airy Today"/>
@@ -144,13 +166,35 @@
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </imageView>
+                                                        <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D6F-Ug-hGE">
+                                                            <rect key="frame" x="0.0" y="272" width="295" height="128"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="128" id="G1P-2w-0ju"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toy Story 4" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VA0-pw-eYz">
+                                                            <rect key="frame" x="20" y="290" width="255" height="90"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="90" id="9pK-9w-7zK"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="D6F-Ug-hGE" secondAttribute="bottom" id="0H9-41-gej"/>
+                                                        <constraint firstAttribute="bottom" secondItem="VA0-pw-eYz" secondAttribute="bottom" constant="20" id="Dx2-Kc-4sZ"/>
                                                         <constraint firstItem="kK4-yp-MZd" firstAttribute="top" secondItem="thv-5g-sQF" secondAttribute="top" id="EUS-Lb-td0"/>
                                                         <constraint firstAttribute="bottom" secondItem="kK4-yp-MZd" secondAttribute="bottom" id="MTJ-Rs-sW2"/>
+                                                        <constraint firstAttribute="trailing" secondItem="D6F-Ug-hGE" secondAttribute="trailing" id="Sr2-P4-1yE"/>
+                                                        <constraint firstItem="D6F-Ug-hGE" firstAttribute="leading" secondItem="thv-5g-sQF" secondAttribute="leading" id="dWh-3I-TFn"/>
                                                         <constraint firstAttribute="trailing" secondItem="kK4-yp-MZd" secondAttribute="trailing" id="gYg-db-lXt"/>
+                                                        <constraint firstItem="VA0-pw-eYz" firstAttribute="leading" secondItem="thv-5g-sQF" secondAttribute="leading" constant="20" id="iwT-hr-Hqi"/>
                                                         <constraint firstItem="kK4-yp-MZd" firstAttribute="leading" secondItem="thv-5g-sQF" secondAttribute="leading" id="sQQ-Ix-fiK"/>
+                                                        <constraint firstAttribute="trailing" secondItem="VA0-pw-eYz" secondAttribute="trailing" constant="20" id="xTD-Rf-ecP"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -168,6 +212,8 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="movieImage" destination="kK4-yp-MZd" id="ai8-0Q-VQT"/>
+                                            <outlet property="originalTitle" destination="VA0-pw-eYz" id="hhq-Dk-a88"/>
+                                            <outlet property="overview" destination="D6F-Ug-hGE" id="cjv-CH-gGq"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -184,8 +230,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="ZoG-mN-Agx">
                         <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="88s-c6-hI6" userLabel="Now Playing, Popular">
-                            <rect key="frame" x="117.5" y="7" width="179" height="30"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="88s-c6-hI6" userLabel="Now Playing, Popular">
+                            <rect key="frame" x="111.5" y="6" width="191" height="32"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
                                 <segment title="Now Playing"/>

@@ -10,4 +10,5 @@ import UIKit
 struct MovieModel {
     let movieImage:UIImage
     let movieID:String
+    let movieTitle:String
 }
